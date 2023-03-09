@@ -1,0 +1,70 @@
+.cards {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    margin-top: 10%;
+}
+.carda {
+    grid-template-rows: repeat(2,1fr);
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+    max-width: 31%;
+    max-height: 45rem;
+    text-align: center;
+}
+.carda:hover {
+    box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+    background-color: #11131c;
+    color: white;
+    transform: scale(1.03);
+    transition: all is ease;
+    cursor: pointer;
+}
+.image {
+    grid-row: 1/2; 
+    margin: 0;
+    padding: 0;
+}
+.articale-content {
+    grid-row: 2/3; 
+    padding: 2rem;
+}
+.card-title {
+    color: #473bf0;
+    font-weight: bold;
+    text-align: center;
+}
+.card-explan {
+    font-size: 1.5625rem;
+    letter-spacing: -.2px;
+    line-height: 1.71;
+    color: gray;
+    margin: 0;
+    text-align: center;
+}
+.articale-content a {
+    display: block;
+    background-color: #111;
+    margin: 10%;
+    font-size: 1.5rem;
+}
+.articale-content a:active {
+    background-color: aqua;
+}
+.articale-content a:hover {
+    background-color: inherit;
+}
+@media (max-width:617px) {
+    .cards{
+        display: block;
+        justify-content: center;
+    }
+    .carda {
+        margin: 2rem;
+        max-width: 70rem;
+        max-height: 45rem;
+    }
+
+}

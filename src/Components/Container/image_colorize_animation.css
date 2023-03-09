@@ -1,0 +1,29 @@
+.image {
+    --width: auto;
+    --height: 300px;
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    overflow: hidden;
+    border-radius: 20px 20px 0 0; 
+}
+.image__img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("/public/images/headerimage.jpg");
+    background-size: var(--width) var(--height);
+}
+.image__img:first-child {
+    left: 0;
+    width: 100%;
+    background-position: center left;
+  }
+  .image__img:last-child {
+    right: 0;
+    width: calc(100% - var(--x, 50%));
+    background-position: center right;
+    filter: grayscale(100%);
+    box-shadow: inset 2px 0 0 #111, -2px 0 0 #111;
+  }
+

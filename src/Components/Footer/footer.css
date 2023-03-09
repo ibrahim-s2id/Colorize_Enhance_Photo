@@ -1,0 +1,42 @@
+footer {
+    position: absolute;
+    
+    margin-top: 10%;
+    border-color: aliceblue;
+    background: inherit;
+    width: auto;
+    margin-left: 130px;
+    height: 200px;
+}
+
+.container {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.t {
+    font-family: "Circular Std", sans-serif;
+    letter-spacing: -.5px;
+    line-height: 1.42;
+    font-weight: 700 !important;
+    color: burlywood;
+}
+
+.w {
+    color: aliceblue;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.ooo {
+    width: 35%;
+}
+
+@media (max-width:617px) {
+    footer {
+        margin: 1rem;
+        text-decoration: none;
+    }
+}
