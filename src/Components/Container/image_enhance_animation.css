@@ -7,7 +7,6 @@ body .banner-wrapper {
 body .banner {
     position:absolute;
     overflow: hidden;
-    
 }
 body .banner.dev {
     transform: skew(-20deg);
@@ -21,29 +20,22 @@ body .banner.dev .banner-content {
 }
 body .banner .banner-content {
     height: 300px;
-   
 }
 body .banner img {
     width: 470px;
     height: 300px;
     border-radius: 20px 20px 0 0; 
 }
-@media (max-width:617px) {
-    
-    body .banner img {
-        
-    }
-}
 
 @media (max-width:617px) {
     body .banner-wrapper {
-        position: relative; 
+        /* position: relative; 
         width: 100%;
         height: 300px;
-        overflow: hidden;
+        overflow: hidden; */
     }
     body .banner img {
-        width: 275px;
+        /* width: 275px; */
         height: 300px;
         border-radius: 20px 20px 0 0; 
     }
