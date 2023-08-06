@@ -1,17 +1,20 @@
 .cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-inline: 25px;
     z-index: 1;
-    margin-top: 10%;
+    margin-top: -10%;
 }
 .carda {
-    grid-template-rows: repeat(2,1fr);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
     transition: 0.3s;
-    max-width: 31%;
-    max-height: 45rem;
+    width: 400px;
+    overflow: hidden;
+    margin-bottom: 25px;
     text-align: center;
 }
 .carda:hover {
@@ -23,12 +26,12 @@
     cursor: pointer;
 }
 .image {
-    grid-row: 1/2; 
+    /* grid-row: 1/2;  */
     margin: 0;
     padding: 0;
 }
 .articale-content {
-    grid-row: 2/3; 
+    /* grid-row: 2/3;  */
     padding: 2rem;
 }
 .card-title {
@@ -37,12 +40,11 @@
     text-align: center;
 }
 .card-explan {
-    font-size: 1.5625rem;
+    font-size: 20px;
     letter-spacing: -.2px;
     line-height: 1.71;
     color: gray;
     margin: 0;
-    text-align: center;
 }
 .articale-content a {
     display: block;
@@ -58,13 +60,15 @@
 }
 @media (max-width:617px) {
     .cards{
-        display: block;
-        justify-content: center;
+        /* display: block;
+        justify-content: center; */
+        margin-top: 25px;
     }
     .carda {
-        margin: 2rem;
-        max-width: 70rem;
-        max-height: 45rem;
+        /* margin: 2rem;
+        max-width: 100%;
+        max-height: 45rem; */
+
     }
 
 }
