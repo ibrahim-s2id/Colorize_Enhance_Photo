@@ -1,23 +1,14 @@
 footer {
-    position: absolute;
-    
     margin-top: 10%;
-    border-color: aliceblue;
-    background: inherit;
-    width: auto;
-    margin-left: 130px;
-    height: 200px;
+    width: 100%;
 }
 
 .container {
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
 }
 
 .t {
-    font-family: "Circular Std", sans-serif;
-    letter-spacing: -.5px;
-    line-height: 1.42;
     font-weight: 700 !important;
     color: burlywood;
 }
@@ -28,15 +19,19 @@ footer {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
-
 .ooo {
-    width: 35%;
+    width: 100px;
+    margin-inline: auto;
+    height: 100px;
+}
+.ooo img{
+    width: 100%;
 }
 
 @media (max-width:617px) {
     footer {
-        margin: 1rem;
         text-decoration: none;
     }
 }
